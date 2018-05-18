@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_item_height"
+    android:paddingRight="32dp">
+    <!--android:id="@+id/list_item">-->
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/image"
+        android:src="@mipmap/ic_launcher"
+        android:paddingLeft="16dp"
+        android:paddingTop="12dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:id="@+id/item">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/miwok_word"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:text="miwok word"
+            android:gravity="bottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/english_word"
+            android:layout_weight="1"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:text="english word"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:src="@drawable/play"
+        android:id="@+id/play"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:src="@drawable/pause"
+        android:id="@+id/pause"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
